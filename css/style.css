@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+/* *******************************************VARIABLE */
+:root {
+  --primary: hsl(215, 51%, 70%);
+  --secondary: hsl(178, 100%, 50%);
+  --white: hsl(0, 0%, 100%);
+  --line: hsl(215, 32%, 27%);
+  --card-bg: hsl(216, 50%, 16%);
+  --main-bg: hsl(217, 54%, 11%);
+  --spacer: 1.5rem;
+  --fs-300: 16px;
+  --fs-400: 18px;
+  --fs-600: 22px;
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-600: 600;
+}
+/* *******************************************RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* *******************************************TYPOGRAPHY */
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: var(--fs-400);
+  color: var(--primary);
+  letter-spacing: 1px;
+}
+.card-text h1 {
+  color: var(--white);
+  font-size: var(--fs-600);
+  font-weight: var(--fw-600);
+}
+.card-text {
+  font-size: var(--fs-400);
+  font-weight: var(--fw-400);
+}
+.card-nft span {
+  color: var(--secondary);
+}
+.card-nft p {
+  font-size: var(--fs-300);
+  font-weight: var(--fw-300);
+}
+.card-creation {
+  font-size: var(--fs-300);
+  font-weight: var(--fw-300);
+}
+.card-creation span {
+  color: var(--white);
+}
+/* *******************************************DESKTOP */
+main {
+  min-height: 100vh;
+  background-color: var(--main-bg);
+  display: grid;
+  grid: 1fr / 1fr;
+  place-items: center;
+}
+.card {
+  width: 350px;
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.card-img {
+  width: 100%;
+  border-radius: 10px;
+}
+.card-text h1,
+.card-nft,
+.card-creation {
+  margin-block: var(--spacer);
+}
+.card-nft {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+hr {
+  border: none;
+  height: 1px;
+  background-color: var(--primary);
+}
+
+.card-creation {
+  display: flex;
+  align-items: center;
+}
+.card-creation img {
+  width: 15%;
+  margin-right: var(--spacer);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* *******************************************RESPONSIVE */
